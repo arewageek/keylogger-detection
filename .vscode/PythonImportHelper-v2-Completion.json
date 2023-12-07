@@ -1,5 +1,178 @@
 [
     {
+        "label": "shlex",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shlex",
+        "description": "shlex",
+        "detail": "shlex",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "psutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psutil",
+        "description": "psutil",
+        "detail": "psutil",
+        "documentation": {}
+    },
+    {
+        "label": "getopt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "getopt",
+        "description": "getopt",
+        "detail": "getopt",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ctypes",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ctypes",
+        "description": "ctypes",
+        "detail": "ctypes",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter.messagebox",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter.messagebox",
+        "description": "tkinter.messagebox",
+        "detail": "tkinter.messagebox",
+        "documentation": {}
+    },
+    {
+        "label": "askyesno",
+        "importPath": "tkinter.messagebox",
+        "description": "tkinter.messagebox",
+        "isExtraImport": true,
+        "detail": "tkinter.messagebox",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter.scrolledtext",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter.scrolledtext",
+        "description": "tkinter.scrolledtext",
+        "detail": "tkinter.scrolledtext",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "pynput",
         "kind": 6,
         "isExtraImport": true,
@@ -42,24 +215,6 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "smtplib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "smtplib",
-        "description": "smtplib",
-        "detail": "smtplib",
-        "documentation": {}
-    },
-    {
         "label": "MIMEText",
         "importPath": "email.mime.text",
         "description": "email.mime.text",
@@ -73,6 +228,177 @@
         "description": "email.mime.multipart",
         "isExtraImport": true,
         "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 5,
+        "importPath": "detector.linux.no_gui_linux",
+        "description": "detector.linux.no_gui_linux",
+        "peekOfCode": "time = 1\nblack_list = []\nwhite_list = []\nshort_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\n# autostart directory\nautostart_path = os.path.expanduser('~/.config/autostart/')\n# arguments dealt with here",
+        "detail": "detector.linux.no_gui_linux",
+        "documentation": {}
+    },
+    {
+        "label": "black_list",
+        "kind": 5,
+        "importPath": "detector.linux.no_gui_linux",
+        "description": "detector.linux.no_gui_linux",
+        "peekOfCode": "black_list = []\nwhite_list = []\nshort_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\n# autostart directory\nautostart_path = os.path.expanduser('~/.config/autostart/')\n# arguments dealt with here\nif argumentList:",
+        "detail": "detector.linux.no_gui_linux",
+        "documentation": {}
+    },
+    {
+        "label": "white_list",
+        "kind": 5,
+        "importPath": "detector.linux.no_gui_linux",
+        "description": "detector.linux.no_gui_linux",
+        "peekOfCode": "white_list = []\nshort_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\n# autostart directory\nautostart_path = os.path.expanduser('~/.config/autostart/')\n# arguments dealt with here\nif argumentList:\n    try:",
+        "detail": "detector.linux.no_gui_linux",
+        "documentation": {}
+    },
+    {
+        "label": "short_options",
+        "kind": 5,
+        "importPath": "detector.linux.no_gui_linux",
+        "description": "detector.linux.no_gui_linux",
+        "peekOfCode": "short_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\n# autostart directory\nautostart_path = os.path.expanduser('~/.config/autostart/')\n# arguments dealt with here\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)",
+        "detail": "detector.linux.no_gui_linux",
+        "documentation": {}
+    },
+    {
+        "label": "long_options",
+        "kind": 5,
+        "importPath": "detector.linux.no_gui_linux",
+        "description": "detector.linux.no_gui_linux",
+        "peekOfCode": "long_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\n# autostart directory\nautostart_path = os.path.expanduser('~/.config/autostart/')\n# arguments dealt with here\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:",
+        "detail": "detector.linux.no_gui_linux",
+        "documentation": {}
+    },
+    {
+        "label": "argumentList",
+        "kind": 5,
+        "importPath": "detector.linux.no_gui_linux",
+        "description": "detector.linux.no_gui_linux",
+        "peekOfCode": "argumentList = sys.argv[1:]\n# autostart directory\nautostart_path = os.path.expanduser('~/.config/autostart/')\n# arguments dealt with here\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:\n            if opt in ('-h', \"--help\"):\n                print(\"Available arguments:\\n\"",
+        "detail": "detector.linux.no_gui_linux",
+        "documentation": {}
+    },
+    {
+        "label": "autostart_path",
+        "kind": 5,
+        "importPath": "detector.linux.no_gui_linux",
+        "description": "detector.linux.no_gui_linux",
+        "peekOfCode": "autostart_path = os.path.expanduser('~/.config/autostart/')\n# arguments dealt with here\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:\n            if opt in ('-h', \"--help\"):\n                print(\"Available arguments:\\n\"\n                      \"-h/--help  Shows this menu\\n\"\n                      \"-a/--add-to-startup  Adds program to startup directory\\n\"",
+        "detail": "detector.linux.no_gui_linux",
+        "documentation": {}
+    },
+    {
+        "label": "KeyloggerDetector",
+        "kind": 6,
+        "importPath": "detector.windows.GUI.main",
+        "description": "detector.windows.GUI.main",
+        "peekOfCode": "class KeyloggerDetector:\n    def __init__(self, master):\n        self.whitelist = []\n        self.whitelist_ip = ['127.0.0.1', '0.0.0.0']\n        self.blacklist = []\n        self.blacklist_ip = []\n        self.source_ip = ['127.0.0.1', '0.0.0.0']\n        self.process_name = None\n        self.grouped_output = None\n        self.skip_print = False",
+        "detail": "detector.windows.GUI.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_admin",
+        "kind": 2,
+        "importPath": "detector.windows.GUI.main",
+        "description": "detector.windows.GUI.main",
+        "peekOfCode": "def is_admin():\n    try:\n        return ctypes.windll.shell32.IsUserAnAdmin()\n    except AttributeError:\n        return False\ndef startup():\n    file_exists = exists(\"C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\StartUp\\\\E-Guard.exe\")\n    try:\n        if not file_exists:\n            # get current path of file",
+        "detail": "detector.windows.GUI.main",
+        "documentation": {}
+    },
+    {
+        "label": "startup",
+        "kind": 2,
+        "importPath": "detector.windows.GUI.main",
+        "description": "detector.windows.GUI.main",
+        "peekOfCode": "def startup():\n    file_exists = exists(\"C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\StartUp\\\\E-Guard.exe\")\n    try:\n        if not file_exists:\n            # get current path of file\n            source_path = f'{os.getcwd()}\\\\E-Guard.exe'\n            destination_path = \"C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\StartUp\\\\E-Guard.exe\"\n            # copy source to destination\n            shutil.copy(source_path, destination_path)\n            # re-check if file exists, then print to screen results",
+        "detail": "detector.windows.GUI.main",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "kind": 2,
+        "importPath": "detector.windows.GUI.main",
+        "description": "detector.windows.GUI.main",
+        "peekOfCode": "def remove():\n    start_loc = \"C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\StartUp\\\\E-Guard.exe\"\n    try:\n        file_exists = exists(\"C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\StartUp\\\\E-Guard.exe\")\n        if file_exists:\n            os.remove(\"C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\StartUp\\\\E-Guard.exe\")\n            file_exists = exists(\"C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\StartUp\\\\E-Guard.exe\")\n            if not file_exists:\n                messagebox.showinfo(\"Information\", \"File removed successfully.\")\n            else:",
+        "detail": "detector.windows.GUI.main",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 5,
+        "importPath": "detector.windows.no_gui",
+        "description": "detector.windows.no_gui",
+        "peekOfCode": "time = 1\nblack_list = []\nwhite_list = []\nshort_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)",
+        "detail": "detector.windows.no_gui",
+        "documentation": {}
+    },
+    {
+        "label": "black_list",
+        "kind": 5,
+        "importPath": "detector.windows.no_gui",
+        "description": "detector.windows.no_gui",
+        "peekOfCode": "black_list = []\nwhite_list = []\nshort_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:",
+        "detail": "detector.windows.no_gui",
+        "documentation": {}
+    },
+    {
+        "label": "white_list",
+        "kind": 5,
+        "importPath": "detector.windows.no_gui",
+        "description": "detector.windows.no_gui",
+        "peekOfCode": "white_list = []\nshort_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:\n            if opt in ('-h', \"--help\"):",
+        "detail": "detector.windows.no_gui",
+        "documentation": {}
+    },
+    {
+        "label": "short_options",
+        "kind": 5,
+        "importPath": "detector.windows.no_gui",
+        "description": "detector.windows.no_gui",
+        "peekOfCode": "short_options = \"har\"\nlong_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:\n            if opt in ('-h', \"--help\"):\n                print(\"Available arguments:\\n\"",
+        "detail": "detector.windows.no_gui",
+        "documentation": {}
+    },
+    {
+        "label": "long_options",
+        "kind": 5,
+        "importPath": "detector.windows.no_gui",
+        "description": "detector.windows.no_gui",
+        "peekOfCode": "long_options = [\"help\", \"add-to-startup\", \"remove-from-startup\"]\n# remove 1st argument from list of arguments\nargumentList = sys.argv[1:]\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:\n            if opt in ('-h', \"--help\"):\n                print(\"Available arguments:\\n\"\n                      \"-h/--help  Shows this menu\\n\"",
+        "detail": "detector.windows.no_gui",
+        "documentation": {}
+    },
+    {
+        "label": "argumentList",
+        "kind": 5,
+        "importPath": "detector.windows.no_gui",
+        "description": "detector.windows.no_gui",
+        "peekOfCode": "argumentList = sys.argv[1:]\nif argumentList:\n    try:\n        arguments, values = getopt.getopt(argumentList, short_options, long_options)\n        for opt, arg in arguments:\n            if opt in ('-h', \"--help\"):\n                print(\"Available arguments:\\n\"\n                      \"-h/--help  Shows this menu\\n\"\n                      \"-a/--add-to-startup  Adds program to startup directory\\n\"\n                      \"-r/--remove-from-startup  Removed program from startup.\")",
+        "detail": "detector.windows.no_gui",
+        "documentation": {}
+    },
+    {
+        "label": "mail_it",
+        "kind": 2,
+        "importPath": "detector.keylogger_test",
+        "description": "detector.keylogger_test",
+        "peekOfCode": "def mail_it():\n    from_address = \"\"\n    from_address_password = \"\"\n    to_list = [\"\"]\n    message = 'Message!'\n    server = smtplib.SMTP('smtp.gmail.com:587')\n    server.starttls()\n    server.login(from_address, from_address_password)\n    server.sendmail(from_address, to_list, message)\n    server.close()",
+        "detail": "detector.keylogger_test",
+        "documentation": {}
+    },
+    {
+        "label": "times_run",
+        "kind": 5,
+        "importPath": "detector.keylogger_test",
+        "description": "detector.keylogger_test",
+        "peekOfCode": "times_run = 10\nwhile times_run > 0:\n    mail_it()\n    print(f'Sent email # {times_run}')\n    time.sleep(5)\n    times_run -= 1",
+        "detail": "detector.keylogger_test",
         "documentation": {}
     },
     {
